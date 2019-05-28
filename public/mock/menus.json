@@ -1,0 +1,26 @@
+[{
+    "id": 1,
+    "url": "/main/dashboard",
+    "icon": "dashboard",
+    "name": "Dashboard"
+}, {
+    "id": 2,
+    "url": "/main",
+    "icon": "upload",
+    "name": "Upload"
+}, {
+    "id": 3,
+    "icon": "appstore",
+    "name": "System Management",
+    "children": [{
+        "id": 301,
+        "url": "/main/system/user",
+        "icon": "user",
+        "name": "User Management"
+    }, {
+        "id": 302,
+        "url": "/main/system/role",
+        "icon": "safety-certificate",
+        "name": "Role Management"
+    }]
+}]

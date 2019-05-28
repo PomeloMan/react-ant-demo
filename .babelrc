@@ -1,0 +1,23 @@
+/**
+ * babel-plugin-import
+ */
+{
+    "plugins": [
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "libraryDirectory": "es",
+                "style": "css"
+            }
+        ],
+        [
+            "import",
+            {
+                "libraryName": "antd-mobile",
+                "libraryDirectory": "es",
+                "style": "css"
+            }
+        ]
+    ]
+}

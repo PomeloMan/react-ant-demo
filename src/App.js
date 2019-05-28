@@ -1,26 +1,42 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import styles from '@/App.module.scss';
+// import Button from 'antd/lib/button';
+// import { Button } from 'antd';
+// import { Link } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+class App extends React.Component {
+
+  render() {
+    return (
+      <header className={styles.header} onClick={this.toMain}>
+        <img src={logo} className={styles.logo} alt="logo"/>
+        {/* <Button type="primary">
+          <Link to="/main">Main</Link>
+        </Button> */}
       </header>
-    </div>
-  );
+    );
+  }
+
+  toMain = () => {
+    this.props.history.push('/main');
+  }
 }
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className={styles.header} onClick={alertt}>
+//         <img src={logo} className="App-logo" alt="logo"/>
+//         <Button type="primary">
+//           <Link to="/main">Main</Link>
+//         </Button>
+//       </header>
+//     </div>
+//   );
+// }
+
+// function alertt() {
+//   alert(123)
+// }
 
 export default App;
